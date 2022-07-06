@@ -49,6 +49,6 @@ jobs:
 
         with:
          name: Build
-         url: ${{ secrets.WEBHOOK }}
+         url: ${{ secrets.https://chat.googleapis.com/v1/spaces/AAAAWbii6wA/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=KmSTVuAKY5j_L2m6YFNUHeqqHKQWjREB5sYlWSOop9w%3D }}
          status: ${{ job.status }}
          if: always()
