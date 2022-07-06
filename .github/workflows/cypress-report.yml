@@ -44,7 +44,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           
-      - name: Google Chat Notification
+      - name: Google Chat Notificationn
         uses: Co-qn/google-chat-notification@releases/v1
         with:
          name: Build
