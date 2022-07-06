@@ -44,10 +44,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           
-      - name: Google Chat Notification
-        uses: Co-qn/google-chat-notification@releases/v1
+      - name: google-chat-notification
+        uses: Co-qn/google-chat-notification@v1
+
         with:
          name: Build
-         url: ${{ secrets.GOOGLE_CHAT_WEBHOOK }}
+         url: ${{ secrets.WEBHOOK }}
          status: ${{ job.status }}
          if: always()
